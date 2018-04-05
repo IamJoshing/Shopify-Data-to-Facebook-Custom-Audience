@@ -1,0 +1,7 @@
+.DS_Store
+
+exports/*
+FacebookAudiences/*
+/.ipynb_checkpoints/*
+/.ipynb_checkpoints/shopify_to_fb_audience-checkpoint.ipynb
+/shopify_to_fb_audience.ipynb
