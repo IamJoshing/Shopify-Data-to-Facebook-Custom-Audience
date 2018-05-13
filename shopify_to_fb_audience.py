@@ -1,5 +1,5 @@
 # -----------------------------
-#imports
+# Imports
 # -----------------------------
 
 import glob
@@ -27,7 +27,7 @@ my_dtypes = {
 my_parse_dates = ['Paid at', 'Fulfilled at', 'Created at', 'Cancelled at']
 
 # -----------------------------
-# frame
+# Frame
 # -----------------------------
 
 for file_ in allFiles:
@@ -75,7 +75,7 @@ df2
 
 
 # -----------------------------
-#facebook audience creation w/ col_map
+# Facebook audience creation w/ col_map
 # -----------------------------
 
 facebook_audience_keys = ['Email', 'Billing City', 'Billing Zip', 'Billing Province','Billing Country','Billing Phone']
@@ -91,8 +91,8 @@ facebook_audience
 
 
 # -----------------------------
-#facebook to CSV
+# Facebook to CSV
 # -----------------------------
-path=r'FacebookAudiences/'
-audience_name = "my_fb_audience"
+path=r'FacebookAudiences/' # use your path
+audience_name = "my_fb_audience" # name your audience
 facebook_audience.to_csv(path+audience_name, sep='\t', encoding='utf-8')
