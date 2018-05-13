@@ -13,9 +13,9 @@ Add exported data from Shopify to the exports directory.
 
 
 ## Step 3
-**There are filters on the data which need to be preset or removed**
-Change the exports directory in shopify_to_fb_audience.py to match yours (ex. /exports/4-4-18/).
-Go to the bottom of the script, in the section 'Facebook to CSV' change CSV's output path and audience name to your choosing.
+**There are filters on the data which need to be preset or removed** 
+Change the exports directory in shopify_to_fb_audience.py to match yours (ex. /exports/4-4-18/). 
+Go to the bottom of the script, in the section 'Facebook to CSV' change CSV's output path and audience name to your choosing. 
 
 ## Step 4
 run `python shopify_to_fb_audience.py`
