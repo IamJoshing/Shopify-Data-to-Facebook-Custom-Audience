@@ -69,8 +69,8 @@ Vendor = df1['Vendor'].str.contains("Vendor Name", na=False)
 # # Subtotals
 Subtotals = df1['Subtotal']  > 50
 
-# df2 = df1[Billing_Country & Billing_Province & Subtotals]
-df1
+df2 = df1[Billing_Country & Billing_Province & Subtotals]
+df2
 
 
 
@@ -90,3 +90,9 @@ facebook_audience = facebook_audience.rename(columns=col_mapping, copy=False)
 facebook_audience
 
 
+# -----------------------------
+#facebook to CSV
+# -----------------------------
+path=r'FacebookAudiences/'
+audience_name = "my_fb_audience"
+facebook_audience.to_csv(path+audience_name, sep='\t', encoding='utf-8')
